@@ -187,8 +187,16 @@ li {
   align-self: flex-start;
 }
 
+@media only screen and (max-width: 768px) {
 
+  #introduction {
+    width:90%;
+  }
 
+  #introduction > h3 {
+    font-size:40px;
+  }
+}
 /* End of Introduction Section */
 
 
