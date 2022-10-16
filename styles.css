@@ -197,7 +197,9 @@ li {
 @media only screen and (max-width: 375px) {
 
   #introduction {
-    width:90%;
+    width:inherit;
+    height:auto;
+    padding: 20px;
   }
 
   #introduction > h3 {
@@ -226,7 +228,7 @@ li {
 
 .project-tile {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 600px;
@@ -282,6 +284,15 @@ li {
   .project-tile p {
     font-size: 20px;
   }
+
+  .project-tile a{
+    max-width: 350px;
+  }
+
+  .btn{
+    margin:auto;
+    padding:auto;
+  }
 }
 
 /* Contact Section */
@@ -294,7 +305,7 @@ li {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   padding: 0 2rem;
   background: var(--contact-background);
 }
@@ -341,10 +352,24 @@ li {
 }
 
 @media only screen and (max-width: 375px) {
-  .contact-section{
-    width:inherit;
-    height:auto;
+  #projects{
+    padding:25px;
   }
+  .contact-section{
+    width:100%;
+    height:100vh;
+    padding:0px;
+    margin:0px;
+  }
+
+  .contact-section-header > h2 {
+    font-size:80px;
+  }
+
+  .contact-links{
+    flex-direction:column;
+  }
+
 }
 
 /* End */
