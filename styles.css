@@ -262,7 +262,7 @@ li {
   padding-bottom:-20px;
 }
 
-.btn{
+.projectbtn{
   display: inline-block;
   border-radius:5%;
   padding:5px;
@@ -271,12 +271,12 @@ li {
   transition:all 0.3s ease;
 }
 
-.btn:hover {
+.projectbtn:hover {
   transform: translate(3px, -2px);
   transition:all 0.3s ease;
 }
 
-.btn a{
+.projectbtn a{
   font-size:20px;
 }
 
@@ -292,9 +292,19 @@ li {
     max-width: 350px;
   }
 
-  .btn{
-    margin:auto;
-    padding:auto;
+  .projectbtn{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:10px;
+    width:40%;
+    margin:-60px auto 20px auto;
+  }
+
+  .projectbtn a {
+    
+    font-size:1rem;
   }
 }
 
@@ -365,12 +375,22 @@ li {
     margin:0px;
   }
 
-  .contact-section-header > h2 {
-    font-size:80px;
+  .contact-section-header > h2,p {
+    font-size:4rem;
   }
 
   .contact-links{
     flex-direction:column;
+  }
+
+  .contact-section-header p {
+    width:50%;
+    display: inline-block;
+    font-size:1rem;
+  }
+
+  .contact-links a {
+    font-size:1.5rem;
   }
 
 
