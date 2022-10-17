@@ -63,6 +63,65 @@ a:visited{
   text-decoration: none;
 }
 
+/* Media Query */
+@media only screen and (max-width: 412px) {
+  nav {
+    justify-content: space-evenly;
+  }
+
+  .nav-list{
+    margin-right:0px;
+  }
+
+  .nav-list a {
+    font-size: 4vw;
+  }
+
+  #introduction {
+    width:inherit;
+    height:auto;
+    padding: 50px 20px 20px 20px;
+  }
+
+  #introduction > h3 {
+    font-size:40px;
+  }
+
+  #projects h2{
+    padding-top:50px;
+  }
+  .project-tile p {
+    font-size: 20px;
+  }
+
+  .project-tile a{
+    max-width: 350px;
+  }
+
+  .btn{
+    margin:auto;
+    padding:auto;
+  }
+
+  #projects{
+    padding:25px;
+  }
+  .contact-section{
+    width:100%;
+    height:100vh;
+    padding:0px;
+    margin:0px;
+  }
+
+  .contact-section-header > h2 {
+    font-size:80px;
+  }
+
+  .contact-links{
+    flex-direction:column;
+  }
+}
+
 /* Navigation */
 
 nav {
@@ -98,20 +157,6 @@ li {
   transition: all 0.5s ease;
   background:black;
   text-decoration: none;
-}
-
-@media only screen and (max-width: 412px) {
-  nav {
-    justify-content: space-evenly;
-  }
-
-  .nav-list{
-    margin-right:0px;
-  }
-
-  .nav-list a {
-    font-size: 4vw;
-  }
 }
 /* End of Navigation */
 
@@ -194,18 +239,6 @@ li {
   align-self: flex-start;
 }
 
-@media only screen and (max-width: 412px) {
-
-  #introduction {
-    width:inherit;
-    height:auto;
-    padding: 50px 20px 20px 20px;
-  }
-
-  #introduction > h3 {
-    font-size:40px;
-  }
-}
 /* End of Introduction Section */
 
 
@@ -280,23 +313,7 @@ li {
   font-size:20px;
 }
 
-@media only screen and (max-width: 412px) {
-  #projects h2{
-    padding-top:50px;
-  }
-  .project-tile p {
-    font-size: 20px;
-  }
 
-  .project-tile a{
-    max-width: 350px;
-  }
-
-  .btn{
-    margin:auto;
-    padding:auto;
-  }
-}
 
 /* Contact Section */
 
@@ -353,26 +370,6 @@ li {
   transform: translateY(8px);
 }
 
-@media only screen and (max-width: 412px) {
-  #projects{
-    padding:25px;
-  }
-  .contact-section{
-    width:100%;
-    height:100vh;
-    padding:0px;
-    margin:0px;
-  }
 
-  .contact-section-header > h2 {
-    font-size:80px;
-  }
-
-  .contact-links{
-    flex-direction:column;
-  }
-
-
-}
 
 /* End */
